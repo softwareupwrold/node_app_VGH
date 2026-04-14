@@ -21,7 +21,7 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           key: ${{ secrets.SSH_KEY }}
           script: |
-            cd /root/node_app_VGH
+            cd /var/www/node_app_VGH
             git pull origin main
             # git fetch origin
             # git reset --hard origin/main
